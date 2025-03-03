@@ -1,0 +1,22 @@
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore eslint cache
+.eslintcache
+
+# Ignore editor and OS-specific files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Ignore build files
+dist/
+build/
+out/
+
+# Ignore JS config files if not needed
+jsconfig.json
+tsconfig.json

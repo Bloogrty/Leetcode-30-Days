@@ -3,4 +3,4 @@ const argumentsLength = (...args) => {
   return result;
 };
 
-// argumentsLength(1, 2, 3);
+argumentsLength(1, 2, 3);

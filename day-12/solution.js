@@ -1,16 +1,16 @@
 // solution 1
-// const addTwoPromises = async (promise1, promise2) => {
-//   const [val1, val2] = await Promise.all([promise1, promise2]);
-//   return val1 + val2;
-// };
-
-// solution 2
-const addTwoPromises = async (...args) => {
-  const values = await Promise.all(args);
-  return values.reduce((acc, curr) => acc + curr, 0);
+const addTwoPromises = async (promise1, promise2) => {
+  const [val1, val2] = await Promise.all([promise1, promise2]);
+  return val1 + val2;
 };
 
-addTwoPromises(Promise.resolve(2), Promise.resolve(2)).then(console.log); // 4
+// solution 2
+// const addTwoPromises = async (...args) => {
+//   const values = await Promise.all(args);
+//   return values.reduce((acc, curr) => acc + curr, 0);
+// };
+
+// addTwoPromises(Promise.resolve(2), Promise.resolve(2)).then(console.log);
 
 // Note
 // Promise = janji
